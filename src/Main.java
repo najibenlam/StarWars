@@ -1,4 +1,3 @@
-import java.sql.Driver;
 import java.util.ArrayList;
 void main() {
     ArrayList<GameCharacter> characters = new ArrayList<>();
@@ -16,8 +15,9 @@ void main() {
 
 
 for(GameCharacter character : characters) {
-    character.action();
+    character.goLive();
     character.showInfo();
+    character.action();
 
 
     if (character instanceof Jedi) {

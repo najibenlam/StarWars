@@ -5,7 +5,7 @@ public class CloneTrooper extends GameCharacter{
     }
 
     @Override
-    void action(){System.out.println("Clone Trooper fires blaster!");}
+    void action(){System.out.println(name + " fires blaster!");}
 
 
 

@@ -7,7 +7,7 @@ public abstract class GameCharacter {
         this.age = age;
     }
 
-    void action(){System.out.println("Character is doing something");}
+    abstract void action();
 
     void showInfo(){System.out.println("Name: " + name + ", Age: " + age);}
 
