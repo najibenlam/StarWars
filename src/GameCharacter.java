@@ -1,10 +1,15 @@
 public abstract class GameCharacter {
     protected String name;
-    int age;
+    protected int age;
+
+    public GameCharacter(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
 
     void action(){System.out.println("Character is doing something");}
 
-    void showInfo(){System.out.println(name + age);}
+    void showInfo(){System.out.println("Name: " + name + ", Age: " + age);}
 
     final void goLive(){System.out.println("Character is now live!");}
 }
